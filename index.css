@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:monospace;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 60%;
+    min-width: fit-content;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.task-adder {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.task-adder input[type="text"],
+.task-adder input[type="date"],
+.task-adder button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.task-lister table {
+    width: 100%;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+}
+
+.task-lister thead ,
+.task-lister td{
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-lister thead {
+    background-color: #f2f2f2;
+}
+
+.edit-button,
+.delete-button,
+.done-button {
+    background:none;
+    border:none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.done-button {
+    color: #4caf50;
+}
+
+.done-button:hover {
+    color: #45a049;
+}

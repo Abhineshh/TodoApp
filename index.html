@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TodoApp</title>
+   <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+   <div class="container">
+      <h1 style="text-align: center; margin:20px;">Todo App</h1>
+      <div class="task-adder">
+         <input type="text" placeholder="Enter Task" class="task-name" />
+         <input type="date" value="" class="task-time" />
+         <button class="add-button" title="Add the Task to TodoList">+</button>
+      </div>
+
+      <div class="task-lister">
+         <table>
+            <thead>
+               <tr>
+                  <td>Task</td>
+                  <td>due date</td>
+                  <td>status</td>
+                  <td>actions</td>
+               </tr>
+            </thead>
+            <tbody class="table-body">
+               
+            </tbody>
+         </table>
+      </div>
+   </div>
+   <script src="index.js"></script>
+
+</body>
+
+</html>
